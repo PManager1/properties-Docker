@@ -1,5 +1,7 @@
 
 angular utils not being loaded via bower, its copied. 
+its using angular-moment  not the plain old moment.js 
+
 
 
 

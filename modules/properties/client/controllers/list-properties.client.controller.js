@@ -105,8 +105,8 @@ $scope.Data = Data;
 
   .controller('PropertiesListController', PropertiesListController);
   console.log( ' inside the list-properties-client-controller');                                                                       
-  PropertiesListController.$inject = ['$scope','$rootScope', '$q', '$location', '$http','$filter','PropertiesService', 'shareDataService', 'Data', '$mdToast','moment','$mdEditDialog','$timeout', '$mdSidenav', '$log','dates_two_weeks_before'];
-  function PropertiesListController($scope, $rootScope, $q, $location, $http, $filter, PropertiesService, shareDataService, Data, $mdToast, moment,  $mdEditDialog, $timeout, $mdSidenav, $log, dates_two_weeks_before) {
+  PropertiesListController.$inject = ['$scope','$rootScope', '$q', '$location', '$http','$filter','PropertiesService', 'shareDataService', 'Data', '$mdToast','$mdEditDialog','$timeout', '$mdSidenav', '$log','dates_two_weeks_before'];
+  function PropertiesListController($scope, $rootScope, $q, $location, $http, $filter, PropertiesService, shareDataService, Data, $mdToast, $mdEditDialog, $timeout, $mdSidenav, $log, dates_two_weeks_before) {
   console.log( ' loading PropertiesListController  ========== for mdToast =>', $mdToast); 
 
     var vm = this;
