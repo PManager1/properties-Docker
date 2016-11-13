@@ -30,7 +30,6 @@ module.exports = {
         'public/lib/angular-messages/angular-messages.js',
         'public/lib/angular-mocks/angular-mocks.js',
         'public/lib/angular-resource/angular-resource.js',
-        'public/lib/angular-ui-utils/ui-utils.js',  
         'public/lib/angular-material/angular-material.min.js',
         'public/lib/angular-material-data-table/dist/md-data-table.min.js',
         'public/lib/moment/min/moment.min.js',
