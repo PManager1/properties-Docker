@@ -13,7 +13,6 @@ module.exports = {
         'public/lib/angular-ui-notification/dist/angular-ui-notification.css',
         'public/lib/angular-material/angular-material.min.css',
         'public/lib/material-design-icons/iconfont/material-icons.css',
-        // 'public/lib/angular-material-icons/angular-material-icons.css',
         'public/lib/angular-material-data-table/dist/md-data-table.min.css',
         'public/lib/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2'
         // endbower
