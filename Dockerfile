@@ -54,7 +54,8 @@ RUN npm install --quiet && npm cache clean
 # Install bower packages
 COPY bower.json /opt/mean.js/bower.json
 COPY .bowerrc /opt/mean.js/.bowerrc
-RUN bower install --quiet --allow-root --config.interactive=false
+#RUN bower install --quiet --allow-root --config.interactive=false
+RUN bower install --allow-root --config.interactive=true
 
 COPY . /opt/mean.js
 

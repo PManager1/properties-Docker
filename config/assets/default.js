@@ -13,9 +13,9 @@ module.exports = {
         'public/lib/angular-ui-notification/dist/angular-ui-notification.css',
         'public/lib/angular-material/angular-material.min.css',
         'public/lib/Material-Icons.css',
-        // 'public/lib/angular-material-icons/angular-material-icons.css',        
+        // 'public/lib/angular-material-icons/angular-material-icons.css',
         'public/lib/angular-material-data-table/dist/md-data-table.min.css',
-        'public/lib/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2'        
+        'public/lib/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2'
         // endbower
       ],
       js: [
@@ -26,12 +26,12 @@ module.exports = {
         'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
         'public/lib/ng-file-upload/ng-file-upload.js',
         'public/lib/ng-img-crop/compile/unminified/ng-img-crop.js',
-        'public/lib/angular-aria/angular-aria.min.js',        
+        'public/lib/angular-aria/angular-aria.min.js',
         'public/lib/angular-messages/angular-messages.js',
         'public/lib/angular-mocks/angular-mocks.js',
         'public/lib/angular-resource/angular-resource.js',
         'public/lib/angular-ui-utils/ui-utils.js',  
-        'public/lib/angular-material/angular-material.min.js',         
+        'public/lib/angular-material/angular-material.min.js',
         'public/lib/angular-material-data-table/dist/md-data-table.min.js',
         'public/lib/moment/min/moment.min.js',
         'public/lib/angular-moment/angular-moment.min.js',
