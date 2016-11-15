@@ -179,10 +179,10 @@ $scope.rowSelected;
   
 
 
-// $scope.data = {};
-//   $scope.data.cb1 = true;
-
-
+$scope.data = {};
+  $scope.data.cb1 = true;
+  $scope.data.cb2 = true;
+  $scope.data.cb3 = true;
 
 // ***** TOAST *****
   var last = {
