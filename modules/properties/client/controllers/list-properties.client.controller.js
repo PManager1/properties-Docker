@@ -166,7 +166,7 @@ else {
   
   $scope.query = {
     order: 'address',
-    limit: 30,
+    limit: 70,
     page: 1
   };
 
@@ -329,7 +329,6 @@ $scope.rowSelected;
     console.log( ' SideNav Updated!! ')
 
   }
-
 
 
 

@@ -1,5 +1,25 @@
 
 
+
+
+==========
+https://hub.docker.com/r/meanjs/mean/
+
+gulp prod
+
+npm run start:prod
+
+
+MONGO_SEED=true npm start:prod
+=====
+
+
+Just add ionic bundle file from the app folder and you shoud be good. 
+use this page to do it:  https://goo.gl/fPrciV
+
+
+=========
+
 change the port in  config/env/default.js 
 
 

@@ -161,8 +161,7 @@
               <!-- ng-show="0" class="ng-hide"  -->
       <!-- ng-hide="property.last_date_call_was_made == currentProperty.Today" -->
 
-              <tr  ng-hide="hideProperty(property)" md-row md-select="property" md-on-select="logItem" md-auto-select="options.autoSelect" ng-disabled="dessert.calories.value > 400"  ng-repeat="property in properties | filter:searchquery | limitTo: query.limit : (query.page -1) * query.limit">
-
+              <tr  ng-hide="hideProperty(property)" md-row md-select="property" md-on-select="logItem" md-auto-select="options.autoSelect" ng-disabled="dessert.calories.value > 400"  ng-repeat="property in properties | filter:searchquery | orderBy: 'agent_name' |  limitTo: query.limit : (query.page -1) * query.limit">
 
 
             <td md-cell>{{property.agent_name}}</td>
@@ -255,7 +254,7 @@
       <md-toolbar class="md-theme-light">
         <h1 class="md-toolbar-tools">Sidenav Right  |  
         </h1>
-
+<!-- {{obj}} -->
       </md-toolbar>
       <md-content ng-controller="RightCtrl" layout-padding="">
         <form>
