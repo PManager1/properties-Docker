@@ -163,11 +163,47 @@ else {
     limitSelect: true,
     pageSelect: true
   };
+
+ // $scope.data = {
+ //    today: true,
+ //    vmLeft: false,
+ //    closingSoon: false
+ //  };
+
 $scope.propertyOrder = {
     email_date_it_was_sent: '-last_date_email_sent_on',
     call_last_it_was_made: '-last_date_call_was_made',
     page: 1
 };
+
+$scope.result = {};
+  $scope.pp = { 
+    rate: [{
+      plan: 'a',
+      price: '11'
+      
+    }, {
+      plan: 'b',
+      price: '12'
+    }, {
+      plan: 'c',
+      price: '13'
+      
+    }]
+  };
+
+
+
+// if ($scope.data.today == 'true') {
+//     console.log(' today is true');
+// } else if ($scope.data.vmLeft == 'true') {
+//       console.log( ' vmLeft is true'); 
+// } else {
+//      console.log( ' closingSoon is true');
+// }
+
+
+
 
   $scope.query = {
     order: 'address',
@@ -178,17 +214,8 @@ $scope.propertyOrder = {
 $scope.rowSelected; 
   
 
-  $scope.data = {
-    cb1: true,
-    cb2: false,
-    cb3: true
-  };
 
 
-// $scope.data = {};
-//   $scope.data.cb1 = true;
-//   $scope.data.cb2 = true;
-//   $scope.data.cb3 = true;
 
 // ***** TOAST *****
   var last = {
