@@ -178,11 +178,17 @@ $scope.propertyOrder = {
 $scope.rowSelected; 
   
 
+  $scope.data = {
+    cb1: true,
+    cb2: false,
+    cb3: true
+  };
 
-$scope.data = {};
-  $scope.data.cb1 = true;
-  $scope.data.cb2 = true;
-  $scope.data.cb3 = true;
+
+// $scope.data = {};
+//   $scope.data.cb1 = true;
+//   $scope.data.cb2 = true;
+//   $scope.data.cb3 = true;
 
 // ***** TOAST *****
   var last = {
