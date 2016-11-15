@@ -163,7 +163,12 @@ else {
     limitSelect: true,
     pageSelect: true
   };
-  
+$scope.propertyOrder = {
+    email_date_it_was_sent: '-last_date_email_sent_on',
+    call_last_it_was_made: '-last_date_call_was_made',
+    page: 1
+};
+
   $scope.query = {
     order: 'address',
     limit: 70,

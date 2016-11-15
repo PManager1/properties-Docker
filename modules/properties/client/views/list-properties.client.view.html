@@ -161,20 +161,17 @@
               <!-- ng-show="0" class="ng-hide"  -->
       <!-- ng-hide="property.last_date_call_was_made == currentProperty.Today" -->
 
-              <tr  ng-hide="hideProperty(property)" md-row md-select="property" md-on-select="logItem" md-auto-select="options.autoSelect" ng-disabled="dessert.calories.value > 400"  ng-repeat="property in properties | filter:searchquery | orderBy: 'agent_name' |  limitTo: query.limit : (query.page -1) * query.limit">
-
+              <tr  ng-hide="hideProperty(property)" md-row md-select="property" md-on-select="logItem" md-auto-select="options.autoSelect" ng-disabled="dessert.calories.value > 400"  ng-repeat="property in properties | filter:searchquery | orderBy: propertyOrder.email_date_it_was_sent | limitTo: query.limit : (query.page -1) * query.limit">
 
             <td md-cell>{{property.agent_name}}</td>
-
-
-           
             
             <td md-cell   ng-if="property.cell_phone == '-'"   >   <a href="tel:{{property.phone_no}}"> {{property.phone_no}}</a> </td>
 
             <td md-cell   ng-if="property.cell_phone != '-'"   >   <a href="tel:{{property.cell_phone}}"> {{property.cell_phone}}</a> </td>
-
           
-           <td md-cell> {{property.address}} {{property.city}} </td>
+           <!-- <td md-cell> {{property.address}} {{property.city}} </td> -->
+
+             <td md-cell> {{property.last_date_email_sent_on}} </td>
 
             <td md-cell>  
               <md-select  ng-change="selectChangedPriority(dessert.type)"  ng-model="dessert.type" placeholder="{{property.call_priority}}" md-on-select="logItemType" ng-value="{{type}}" > 
