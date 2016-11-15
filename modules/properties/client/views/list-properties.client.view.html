@@ -83,14 +83,13 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3">
-            <div data-ng-repeat="p in pp.rate">
-                <md-switch ng-model="result.price" ng-true-value="{{p.price}}" ng-false-value="">
+        <div data-ng-repeat="p in pp.rate">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <md-switch ng-change="switchChange(result.price)" ng-model="result.price" ng-true-value="{{p.price}}" ng-false-value="">
                     {{p.plan}}
                 </md-switch>
             </div>
-            Model = {{result.price}}
-        </div>
+        </div>            Model = {{result.price}}
     </div>
 </div>
 

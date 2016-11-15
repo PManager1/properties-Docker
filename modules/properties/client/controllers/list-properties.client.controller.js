@@ -179,20 +179,24 @@ $scope.propertyOrder = {
 $scope.result = {};
   $scope.pp = { 
     rate: [{
-      plan: 'a',
+      plan: 'Just Today',
       price: '11'
       
     }, {
-      plan: 'b',
+      plan: 'VM left',
       price: '12'
     }, {
-      plan: 'c',
+      plan: 'Closing soon',
       price: '13'
       
     }]
   };
 
+$scope.switchChange = function (value) {
 
+
+  console.log( ' the value fired  =', value); 
+}
 
 // if ($scope.data.today == 'true') {
 //     console.log(' today is true');
