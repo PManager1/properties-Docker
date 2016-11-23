@@ -17,6 +17,10 @@ npm run start:prod
 
 
 MONGO_SEED=true npm start:prod
+
+In the express.js  fix this in prod: 
+//    res.header('Access-Control-Allow-Origin', '*');  
+
 =====
 
 

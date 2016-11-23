@@ -20,6 +20,13 @@
 
     $httpProvider.interceptors.push('authInterceptor');
 
+// CORS issue
+    $httpProvider.defaults.headers.common = {};
+    $httpProvider.defaults.headers.post = {};
+    $httpProvider.defaults.headers.put = {};
+    $httpProvider.defaults.headers.patch = {};
+// CORS issue
+
     // Disable debug data for production environment
     // @link https://docs.angularjs.org/guide/production
     $compileProvider.debugInfoEnabled(app.applicationEnvironment !== 'production');
