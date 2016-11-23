@@ -1,6 +1,12 @@
 
+============
 
+PROD   Explore config/env/production.js
+npm run start:prod
 
+To run your application with production environment configuration, execute gulp as follows:
+
+$ gulp prod
 
 ==========
 https://hub.docker.com/r/meanjs/mean/
