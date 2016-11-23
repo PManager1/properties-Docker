@@ -49,6 +49,15 @@ module.exports.initLocalVariables = function (app) {
     res.locals.url = req.protocol + '://' + req.headers.host + req.originalUrl;
     next();
   });
+
+
+app.use(function(req, res, next) {
+    // res.header('Access-Control-Allow-Origin', 'http://34.192.250.112:81');
+    res.header('Access-Control-Allow-Origin', '*');    
+    next();
+});
+
+
 };
 
 /**
