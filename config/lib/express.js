@@ -53,7 +53,8 @@ module.exports.initLocalVariables = function (app) {
 
 app.use(function(req, res, next) {
     // res.header('Access-Control-Allow-Origin', 'http://34.192.250.112:81');
-    res.header('Access-Control-Allow-Origin', '*');    
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
     next();
 });
 
