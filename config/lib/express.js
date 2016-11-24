@@ -52,14 +52,6 @@ module.exports.initLocalVariables = function (app) {
   });
 
 
-// app.use(function(req, res, next) {
-//     // res.header('Access-Control-Allow-Origin', 'http://34.192.250.112:81');
-//     res.header('Access-Control-Allow-Origin', '*');
-//     res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
-//     next();
-// });
-
-
 
 };
 
@@ -76,10 +68,21 @@ module.exports.initMiddleware = function (app) {
   // Should be placed before express.static
 
 var corsOptions = {
-    origin: 'http://34.192.250.112:81',
+    origin: 'http://34.192.250.112:3000',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   };
   app.use(cors());
+
+
+
+
+app.use(function(req, res, next) {
+    // res.header('Access-Control-Allow-Origin', 'http://34.192.250.112:81');
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+    next();
+});
+
 
 
 
