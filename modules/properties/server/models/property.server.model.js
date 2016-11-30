@@ -127,9 +127,15 @@ var PropertySchema = new Schema({
   last_date_call_was_made: {
     type: String,
     default: 'default',
-    required: false,
+    required: 'please fill last_date_call_was_made',
     trim: true
-  },  
+  }, 
+  propStatus: {
+    type: String,
+    default: 'default',
+    required: 'please fill propStatus',
+    trim: true
+  },    
   call_priority: {
     type: String,
     default: 'Bi_weekly',
