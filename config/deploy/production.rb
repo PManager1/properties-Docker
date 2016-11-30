@@ -1,6 +1,6 @@
-role :app, %w{ubuntu@34.192.250.112}
+role :app, %w{ubuntu@34.192.106.66}
 
-server '34.192.250.112', user: 'ubuntu', roles: %w{web app}, my_property: :my_value
+server '34.192.106.66', user: 'ubuntu', roles: %w{web app}, my_property: :my_value
 
 # set it globally
 

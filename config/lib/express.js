@@ -68,7 +68,7 @@ module.exports.initMiddleware = function (app) {
   // Should be placed before express.static
 
 var corsOptions = {
-    origin: 'http://34.192.250.112:3000',
+    origin: 'http://34.192.250.112:8000',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   };
   app.use(cors());

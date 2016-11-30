@@ -38,7 +38,7 @@ set :pty, true
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-set :keep_releases, 2
+set :keep_releases, 1
 
 
 
@@ -50,10 +50,10 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 
-role :web, "34.192.250.112"                          # Your HTTP server, Apache/etc
-role :app, "34.192.250.112"                          # This may be the same as your `Web` server
-role :db,  "34.192.250.112", :primary => true # This is where Rails migrations will run
-role :db,  "34.192.250.112"
+role :web, "34.192.106.66"                          # Your HTTP server, Apache/etc
+role :app, "34.192.106.66"                          # This may be the same as your `Web` server
+role :db,  "34.192.106.66", :primary => true # This is where Rails migrations will run
+role :db,  "34.192.106.66"
 
 
 
@@ -81,7 +81,7 @@ set :admin_runner, "user"
 
 
 task :execute_on_server do
-  on "root@34.192.250.112" do
+  on "root@34.192.106.66" do
     execute "npm install"
   end
 end
