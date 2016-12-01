@@ -135,6 +135,18 @@ var PropertySchema = new Schema({
     default: 'default',
     required: 'please fill propStatus',
     trim: true
+  }, 
+  agent_State: {
+    type: String,
+    default: 'default',
+    required: 'please fill agent_State',
+    trim: true
+  },      
+  agentType: {
+    type: String,
+    default: 'default',
+    required: 'please fill agentStatus',
+    trim: true
   },    
   call_priority: {
     type: String,
